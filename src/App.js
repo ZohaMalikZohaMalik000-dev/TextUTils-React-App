@@ -1,10 +1,14 @@
 import './App.css';
 import Navbar from './components/Navbar';
-// import About from './components/About';
+import About from './components/About';
 import TextForm from './components/TextForm';
 import React, { useState } from 'react';
 import Alert from './components/Alert';  
-// import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+
+import {
+  BrowserRouter as Router, Routes, Route 
+}  from "react-router-dom";
+
 
 function App() {
   const [Mode, setMode] = useState('light'); 
@@ -20,7 +24,7 @@ function App() {
   const toggleMode = () => {
     if (Mode === 'light') {
       setMode('dark');
-      document.body.style.backgroundColor = "#194571ff";
+      document.body.style.backgroundColor = "#092641ff";
       document.body.style.color = "white";
       showAlert("Dark mode has been enabled", "success");
     } else {
@@ -33,23 +37,23 @@ function App() {
 
   return (  
     <>
-      {/* <Router> */}
+      <Router>
         <Navbar title="TextUtils" aboutText="About" mode={Mode} toggleMode={toggleMode} />
         <Alert alert={alert} />
         
         <div className="container my-3">
-            {/* <Routes>  */}
+            <Routes> 
             {/* ✅ Default route (TextUtils link and refresh) */}
-            {/* <Route Exact path="/" element={<TextForm showAlert={showAlert} heading="Enter the text to analyze below" mode={Mode} />} /> */}
-            <TextForm showAlert={showAlert} heading="Enter the text to analyze below" mode={Mode} />
+            <Route Exact path="/" element={<TextForm showAlert={showAlert} heading="Try TextUtils-  Word Counter,Remove Spaces,Char counter" mode={Mode} />} />
+            {/* <TextForm showAlert={showAlert} heading="Enter the text to analyze below" mode={Mode} /> */}
             {/* ✅ About page */}
-            {/* <Route Exact path="/about" element={<About />} /> */}
+            <Route Exact path="/about" element={<About mode={Mode} />} />
 
             {/* ✅ Agar Home component nahi hai, to sirf text dikha do */}
-            {/* <Route Exact path="/home" element={<h2>Welcome to Home Page</h2>} /> */}
-          {/* </Routes> */}
+            <Route Exact path="/home" element={<h2>Welcome to Home Page</h2>} />
+          </Routes>
         </div>
-      {/* </Router> */}
+      </Router>
     </>
   );
 }
