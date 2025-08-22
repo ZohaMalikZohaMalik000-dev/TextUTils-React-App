@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/My-TeatUtils-App/static/css/main.f855e6bc.css",
-    "main.js": "/My-TeatUtils-App/static/js/main.a44a3d8a.js",
+    "main.js": "/My-TeatUtils-App/static/js/main.c6bf73cd.js",
     "static/js/453.b80566df.chunk.js": "/My-TeatUtils-App/static/js/453.b80566df.chunk.js",
     "index.html": "/My-TeatUtils-App/index.html",
     "main.f855e6bc.css.map": "/My-TeatUtils-App/static/css/main.f855e6bc.css.map",
-    "main.a44a3d8a.js.map": "/My-TeatUtils-App/static/js/main.a44a3d8a.js.map",
+    "main.c6bf73cd.js.map": "/My-TeatUtils-App/static/js/main.c6bf73cd.js.map",
     "453.b80566df.chunk.js.map": "/My-TeatUtils-App/static/js/453.b80566df.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.f855e6bc.css",
-    "static/js/main.a44a3d8a.js"
+    "static/js/main.c6bf73cd.js"
   ]
 }
