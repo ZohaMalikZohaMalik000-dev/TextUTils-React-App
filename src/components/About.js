@@ -6,11 +6,11 @@ export default function About(props) {
     //     color : 'white',
     //     backgroundColor:' black'
     // }
-        // const [MyStyle, setMyStyle]  = useState ({
-        //             color : 'black',
-        //         backgroundColor:'white', 
+        const [myStyle, setMyStyle]  = useState ({
+                    color : 'black',
+                backgroundColor:'white', 
                 
-        // }) 
+        }) 
 
         // const [btnText, SetBtnText]  = useState ("Enable Dark Mode")
         // const toggleMode = () =>{
